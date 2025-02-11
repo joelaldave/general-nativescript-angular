@@ -1,0 +1,31 @@
+<StackLayout >
+    <Button text="Cambiar dirección" (tap)="changeDirection()"></Button>
+    @if (direction()) {
+    <StackLayout backgroundColor="#3c495e">
+        <Label text="Primer Elemento" class="h-16 list-disc"></Label>
+        <Label text="Segundo Elemento" class="h-16 bg-blue-700"></Label>
+        <Label text="Tercer Elemento" class="h-16 bg-blue-900"></Label>
+        <Label text="left" horizontalAlignment="left" width="33%" height="70" backgroundColor="#43B3F4"></Label>
+        <Label text="center" horizontalAlignment="center" width="33%" height="70" backgroundColor="#1089CA"></Label>
+        <Label text="right" horizontalAlignment="right" width="33%" height="70" backgroundColor="#075B88"></Label>
+        <Label text="stretch" horizontalAlignment="stretch" height="70" backgroundColor="#43B3F4"></Label>
+    </StackLayout>
+    }
+    @else {
+    <StackLayout >
+        <StackLayout orientation="horizontal" backgroundColor="#3c495e">
+            <Label text="first" width="70" height="70"  backgroundColor="#43B3F4"></Label>
+            <Label text="second" width="70" height="70" backgroundColor="#1089CA"></Label>
+            <Label text="third" width="70" height="70" backgroundColor="#075B88"></Label>
+        </StackLayout>
+        <StackLayout orientation="horizontal">
+            <Label text="top" verticalAlignment="top" width="70" height="20%" backgroundColor="#43B384"></Label>
+            <Label text="center" verticalAlignment="center" width="70" height="20%" backgroundColor="#1563CA"></Label>
+            <Label text="bottom" verticalAlignment="bottom" width="70" height="20%" backgroundColor="#075129"></Label>
+            <Label text="stretch" verticalAlignment="stretch" width="70" backgroundColor="#43B3F7"></Label>
+        </StackLayout>
+    </StackLayout>
+
+    }
+
+</StackLayout>

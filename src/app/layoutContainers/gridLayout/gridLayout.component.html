@@ -1,0 +1,72 @@
+<StackLayout>
+    <Label text="Seleciona opción"></Label>
+    <ListPicker [items]="list" [selectedIndex]="selectedIndex" (selectedIndexChange)="onSelect($event)" />
+
+    @if (itemselected() === 'example1') {
+    <GridLayout columns="25, 25" rows="25, 25">
+        <Label text="0,0" row="0" col="0" backgroundColor="#43B3F4"></Label>
+        <Label text="0,1" row="0" col="1" backgroundColor="#075B88"></Label>
+        <Label text="1,0" row="1" col="0" backgroundColor="#1089CA"></Label>
+        <Label text="1,1" row="1" col="1" backgroundColor="#43B3F4"></Label>
+    </GridLayout>
+    }
+    @if (itemselected() === 'example2') {
+    <GridLayout columns="*, 2*" rows="2*, 3*" backgroundColor="#3c495e">
+        <Label text="0,0" row="0" col="0" backgroundColor="#43B3F4"></Label>
+        <Label text="0,1" row="0" col="1" backgroundColor="#075B88"></Label>
+        <Label text="1,0" row="1" col="0" backgroundColor="#1089CA"></Label>
+        <Label text="1,1" row="1" col="1" backgroundColor="#43B3F4"></Label>
+    </GridLayout>
+    }
+    @if (itemselected() === 'example3') {
+    <GridLayout columns="80, auto" rows="80, 80" backgroundColor="#3c495e">
+        <Label text="0,0" row="0" col="0" backgroundColor="#43B3F4"></Label>
+        <Label text="0,1" row="0" col="1" backgroundColor="#075B88"></Label>
+        <Label text="1,0" row="1" col="0" backgroundColor="#1089CA"></Label>
+        <Label text="1,1" row="1" col="1" backgroundColor="#43B3F4"></Label>
+    </GridLayout>
+    }
+    @if (itemselected() === 'example4') {
+    <GridLayout columns="40, auto, *" rows="40, auto, *" backgroundColor="#3c495e">
+        <Label text="0,0" row="0" col="0" backgroundColor="#43B3F4"></Label>
+        <Label text="0,1" row="0" col="1" colSpan="2" backgroundColor="#075B88"></Label>
+        <Label text="1,0" row="1" col="0" rowSpan="2" backgroundColor="#1089CA"></Label>
+        <Label text="1,1" row="1" col="1" backgroundColor="#43B3F4"></Label>
+        <Label text="1,2" row="1" col="2" backgroundColor="#1089CA"></Label>
+        <Label text="2,1" row="2" col="1" backgroundColor="#075B88"></Label>
+        <Label text="2,2" row="2" col="2" backgroundColor="#43B3F4"></Label>
+    </GridLayout>
+    }
+    <!-- <Picker [items]="list" [(selectedIndex)]="selectedIndex" (selectedIndexChange)="onSelect($event)"></Picker> -->
+    <!-- <GridLayout columns="25, 25" rows="25, 25">
+        <Label text="0,0" row="0" col="0" backgroundColor="#43B3F4"></Label>
+        <Label text="0,1" row="0" col="1" backgroundColor="#075B88"></Label>
+        <Label text="1,0" row="1" col="0" backgroundColor="#1089CA"></Label>
+        <Label text="1,1" row="1" col="1" backgroundColor="#43B3F4"></Label>
+    </GridLayout>
+
+
+    <GridLayout columns="*, 2*" rows="2*, 3*" backgroundColor="#3c495e">
+        <Label text="0,0" row="0" col="0" backgroundColor="#43B3F4"></Label>
+        <Label text="0,1" row="0" col="1" backgroundColor="#075B88"></Label>
+        <Label text="1,0" row="1" col="0" backgroundColor="#1089CA"></Label>
+        <Label text="1,1" row="1" col="1" backgroundColor="#43B3F4"></Label>
+    </GridLayout>
+
+    <GridLayout columns="80, auto" rows="80, 80" backgroundColor="#3c495e">
+        <Label text="0,0" row="0" col="0" backgroundColor="#43B3F4"></Label>
+        <Label text="0,1" row="0" col="1" backgroundColor="#075B88"></Label>
+        <Label text="1,0" row="1" col="0" backgroundColor="#1089CA"></Label>
+        <Label text="1,1" row="1" col="1" backgroundColor="#43B3F4"></Label>
+    </GridLayout>
+
+    <GridLayout columns="40, auto, *" rows="40, auto, *" backgroundColor="#3c495e">
+        <Label text="0,0" row="0" col="0" backgroundColor="#43B3F4"></Label>
+        <Label text="0,1" row="0" col="1" colSpan="2" backgroundColor="#075B88"></Label>
+        <Label text="1,0" row="1" col="0" rowSpan="2" backgroundColor="#1089CA"></Label>
+        <Label text="1,1" row="1" col="1" backgroundColor="#43B3F4"></Label>
+        <Label text="1,2" row="1" col="2" backgroundColor="#1089CA"></Label>
+        <Label text="2,1" row="2" col="1" backgroundColor="#075B88"></Label>
+        <Label text="2,2" row="2" col="2" backgroundColor="#43B3F4"></Label>
+    </GridLayout> -->
+</StackLayout>
