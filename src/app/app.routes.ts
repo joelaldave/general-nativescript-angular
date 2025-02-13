@@ -3,7 +3,7 @@ import { ItemsComponent } from './item/items.component';
 
 
 export const routes: Routes = [
-  { path: '', redirectTo: '/flexbox-layout', pathMatch: 'full' },
+  { path: '', redirectTo: '/items', pathMatch: 'full' },
   { path: 'items', component: ItemsComponent },
   {
     path:'stack-layout',
@@ -16,5 +16,18 @@ export const routes: Routes = [
   {
     path: 'flexbox-layout',
     loadComponent: ()=> import('./layoutContainers/flexboxLayout/flexboxLayout.component').then( m=> m.FlexboxLayoutComponent)
+  },
+  {
+    path: 'wrap-layout',
+    loadComponent: ()=> import('./layoutContainers/wrapLayout/wrapLayout.component').then( m=> m.WrapLayoutComponent)
+  },
+  {
+    path: 'dock-layout',
+    loadComponent: ()=> import('./layoutContainers/dockLayout/dockLayout.component').then( m=> m.DockLayoutComponent)
+  },
+  {
+    path: 'absolute-layout',
+    loadComponent: ()=> import('./layoutContainers/absoluteLayout/absoluteLayout.component').then( m=> m.AbsoluteLayoutComponent)
   }
+
 ];

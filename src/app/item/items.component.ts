@@ -20,5 +20,11 @@ export class ItemsComponent {
     if (text === 'grid-layout') {
       this.route.navigateByUrl('/grid-layout')
     }
+    if (text === 'flexbox-layout') {
+      this.route.navigateByUrl('/flexbox-layout')
+    }
+    if (text === 'wrap-layout') {
+      this.route.navigateByUrl('/wrap-layout')
+    }
   }
 }
