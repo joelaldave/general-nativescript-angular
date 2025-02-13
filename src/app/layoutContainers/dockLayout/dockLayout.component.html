@@ -1,0 +1,40 @@
+
+  <Stackayout >
+    <Label text="Seleciona opción"></Label>
+    <ListPicker [items]="list" [selectedIndex]="selectedIndex" (selectedIndexChange)="onSelect($event)" />
+
+    @if (itemselected() === 'example1') {
+        <DockLayout stretchLastChild="false" backgroundColor="#3c495e">
+            <Label text="left" dock="left" width="40" backgroundColor="#43B3F4" ></Label>
+            <Label text="top" dock="top" height="40" backgroundColor="#1089CA" ></Label>
+            <Label text="right" dock="right" width="40" backgroundColor="#43B3F4" ></Label>
+            <Label text="bottom" dock="bottom" height="40" backgroundColor="#1089CA" ></Label>
+          </DockLayout>
+    }
+    @if (itemselected() === 'example2') {
+        <DockLayout stretchLastChild="true" backgroundColor="#3c495e">
+            <Label text="left" dock="left" width="40" backgroundColor="#43B3F4" ></Label>
+            <Label text="top" dock="top" height="40" backgroundColor="#1089CA" ></Label>
+            <Label text="right" dock="right" width="40" backgroundColor="#43B3F4" ></Label>
+            <Label text="bottom" dock="bottom" backgroundColor="#075B88" ></Label>
+          </DockLayout>
+    }
+    @if (itemselected() === 'example3') {
+        <DockLayout stretchLastChild="true" backgroundColor="#3c495e">
+            <Label text="left" dock="left" width="40" backgroundColor="#43B3F4" ></Label>
+            <Label text="top" dock="top" height="40" backgroundColor="#1089CA" ></Label>
+            <Label text="right" dock="right" width="40" backgroundColor="#43B3F4" ></Label>
+            <Label text="bottom" dock="bottom" height="40" backgroundColor="#1089CA" ></Label>
+            <Label text="center" backgroundColor="#075B88" ></Label>
+          </DockLayout>
+    }
+    @if (itemselected() === 'example4') {
+        <DockLayout stretchLastChild="true" backgroundColor="#3c495e">
+            <Label text="left 1" dock="left" width="40" backgroundColor="#43B3F4" ></Label>
+            <Label text="left 2" dock="left" width="40" backgroundColor="#1089CA" ></Label>
+            <Label text="left 3" dock="left" width="40" backgroundColor="#075B88" ></Label>
+            <Label text="last child" backgroundColor="#43B3F4" ></Label>
+          </DockLayout>
+    }
+
+</Stackayout>
