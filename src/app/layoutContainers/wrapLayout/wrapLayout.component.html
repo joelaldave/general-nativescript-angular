@@ -1,0 +1,22 @@
+<FlexboxLayout flexDirection="column">
+    <Label text="Seleciona opción"></Label>
+    <ListPicker [items]="list" [selectedIndex]="selectedIndex" (selectedIndexChange)="onSelect($event)" />
+
+    @if (itemselected() === 'example1') {
+        <WrapLayout backgroundColor="#3c495e">
+            <Label text="first" width="30%" height="30%" backgroundColor="#43B3F4" ></Label>
+            <Label text="second" width="30%" height="30%" backgroundColor="#075B88" ></Label>
+            <Label text="third" width="30%" height="30%" backgroundColor="#1089CA" ></Label>
+            <Label text="fourth" width="30%" height="30%" backgroundColor="#1089CA" ></Label>
+          </WrapLayout>
+    }
+    @if (itemselected() === 'example2') {
+        <WrapLayout orientation="vertical" backgroundColor="#3c495e">
+            <Label text="first" width="30%" height="30%" backgroundColor="#43B3F4" ></Label>
+            <Label text="second" width="30%" height="30%" backgroundColor="#075B88" ></Label>
+            <Label text="third" width="30%" height="30%" backgroundColor="#1089CA" ></Label>
+            <Label text="fourth" width="30%" height="30%" backgroundColor="#1089CA" ></Label>
+          </WrapLayout>
+    }
+
+</FlexboxLayout>
